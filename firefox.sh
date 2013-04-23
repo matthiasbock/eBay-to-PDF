@@ -1,3 +1,4 @@
 #!/bin/bash
 
-firefox -print http://www.example.com/index.html -printmode pdf -printfile ../foo.pdf
+set MOZ_NO_REMOTE=1
+firefox -no-remote -print http://www.ebay.de/ -printmode pdf -printfile ./ebay.pdf
